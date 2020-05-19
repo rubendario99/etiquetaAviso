@@ -94,6 +94,25 @@ namespace ProyectoEtiquetaAviso
         {
 
             base.OnPaint(e);
+            dibujarMarcaYTexto(e);
+
+            if (gradiente)
+            {
+                LinearGradientBrush gradientBrush = new LinearGradientBrush(
+                new Point(0, 10),
+                new Point(10, 20),
+                ColorInicioGradiente,
+                colorFinalGradiente);
+
+                Pen pen = new Pen(gradientBrush, this.Width);
+
+                e.Graphics.DrawLine(pen, 0, 0, this.Location.X, 0);
+                dibujarMarcaYTexto(e);
+            }
+        }
+
+        private void dibujarMarcaYTexto(PaintEventArgs e)
+        {
             Graphics g = e.Graphics;
             int grosor = 0; //Grosor de las líneas de dibujo
             int offsetX = 0; //Desplazamiento a la derecha del texto
@@ -135,25 +154,8 @@ namespace ProyectoEtiquetaAviso
             Size tam = g.MeasureString(this.Text, this.Font).ToSize();
             this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
             b.Dispose();
-
-            if (gradiente)
-            {
-               LinearGradientBrush gradientBrush = new LinearGradientBrush(
-               new Point(0, 10),
-               new Point(10, 20),
-               ColorInicioGradiente,
-               colorFinalGradiente);
-
-                Pen pen = new Pen(gradientBrush,this.Width);
-
-                e.Graphics.DrawLine(pen, 0, 0, this.Location.X,0);
-
-                Graphics graphics = e.Graphics;
-
-                // e.Graphics.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
-
-            }
         }
+
         protected override void OnTextChanged(EventArgs e)
         {
             base.OnTextChanged(e);
