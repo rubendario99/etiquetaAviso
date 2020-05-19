@@ -49,12 +49,13 @@
             this.etiquetaAviso1.ColorFinalGradiente = System.Drawing.Color.Yellow;
             this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.etiquetaAviso1.Gradiente = false;
-            this.etiquetaAviso1.Location = new System.Drawing.Point(288, 192);
+            this.etiquetaAviso1.Location = new System.Drawing.Point(288, 120);
             this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.Cruz;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
             this.etiquetaAviso1.Size = new System.Drawing.Size(58, 20);
             this.etiquetaAviso1.TabIndex = 0;
             this.etiquetaAviso1.Text = "texto";
+            this.etiquetaAviso1.UseWaitCursor = true;
             // 
             // Form1
             // 

@@ -144,10 +144,14 @@ namespace ProyectoEtiquetaAviso
                ColorInicioGradiente,
                colorFinalGradiente);
 
-                Pen pen = new Pen(gradientBrush);
+                Pen pen = new Pen(gradientBrush,this.Width);
 
-                e.Graphics.DrawLine(pen, 0, 0, this.Location.X, this.Location.Y);
-                e.Graphics.DrawLine(pen,0,0,this.)
+                e.Graphics.DrawLine(pen, 0, 0, this.Location.X,0);
+
+                Graphics graphics = e.Graphics;
+
+                // e.Graphics.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
+
             }
         }
         protected override void OnTextChanged(EventArgs e)
