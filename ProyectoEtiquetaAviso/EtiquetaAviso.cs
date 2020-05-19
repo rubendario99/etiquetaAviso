@@ -11,17 +11,19 @@ using System.Drawing.Drawing2D;
 
 namespace ProyectoEtiquetaAviso
 {
-
     public enum eMarca
     {
         Nada,
         Cruz,
         Circulo
     }
-
+    [
+    DefaultProperty("Gradiente"),
+    DefaultEvent("Load")
+ ]
     public partial class EtiquetaAviso : Control
     {
-
+        
         public EtiquetaAviso()
         {
             InitializeComponent();
