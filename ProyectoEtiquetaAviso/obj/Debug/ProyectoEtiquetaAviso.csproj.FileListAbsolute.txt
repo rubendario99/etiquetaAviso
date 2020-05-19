@@ -2,4 +2,3 @@ C:\Users\ruchi\source\repos\ProyectoEtiquetaAviso\ProyectoEtiquetaAviso\bin\Debu
 C:\Users\ruchi\source\repos\ProyectoEtiquetaAviso\ProyectoEtiquetaAviso\bin\Debug\ProyectoEtiquetaAviso.pdb
 C:\Users\ruchi\source\repos\ProyectoEtiquetaAviso\ProyectoEtiquetaAviso\obj\Debug\ProyectoEtiquetaAviso.dll
 C:\Users\ruchi\source\repos\ProyectoEtiquetaAviso\ProyectoEtiquetaAviso\obj\Debug\ProyectoEtiquetaAviso.pdb
-C:\Users\ruchi\source\repos\ProyectoEtiquetaAviso\ProyectoEtiquetaAviso\obj\Debug\ProyectoEtiquetaAviso.csprojAssemblyReference.cache

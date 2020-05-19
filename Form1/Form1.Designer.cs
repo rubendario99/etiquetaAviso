@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.etiquetaAviso1 = new ProyectoEtiquetaAviso.EtiquetaAviso();
             this.SuspendLayout();
@@ -45,14 +46,15 @@
             // 
             // etiquetaAviso1
             // 
-            this.etiquetaAviso1.BackColor = System.Drawing.Color.Blue;
-            this.etiquetaAviso1.ColorFinalGradiente = System.Drawing.Color.Yellow;
-            this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.etiquetaAviso1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.etiquetaAviso1.ColorFinalGradiente = System.Drawing.Color.Goldenrod;
+            this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.etiquetaAviso1.Gradiente = false;
+            this.etiquetaAviso1.ImagenMarca = ((System.Drawing.Bitmap)(resources.GetObject("etiquetaAviso1.ImagenMarca")));
             this.etiquetaAviso1.Location = new System.Drawing.Point(288, 120);
-            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.Cruz;
+            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.ImagenDeForma;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(58, 20);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(53, 56);
             this.etiquetaAviso1.TabIndex = 0;
             this.etiquetaAviso1.Text = "texto";
             this.etiquetaAviso1.UseWaitCursor = true;

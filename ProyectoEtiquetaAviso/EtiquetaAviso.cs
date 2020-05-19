@@ -15,7 +15,8 @@ namespace ProyectoEtiquetaAviso
     {
         Nada,
         Cruz,
-        Circulo
+        Circulo,
+        ImagenDeForma
     }
     [
     DefaultProperty("Gradiente"),
@@ -27,6 +28,21 @@ namespace ProyectoEtiquetaAviso
         public EtiquetaAviso()
         {
             InitializeComponent();
+        }
+
+        private Bitmap imagenMarca;
+        [Category("Appareance")]
+        [Description("Imagen que se pondra en marca")]
+        public Bitmap ImagenMarca
+        {
+            set
+            {
+                imagenMarca = value;
+            }
+            get
+            {
+                return imagenMarca;
+            }
         }
 
         private Color colorInicioGradiente;
@@ -144,14 +160,21 @@ namespace ProyectoEtiquetaAviso
                    this.Font.Height);
                     offsetX = this.Font.Height + grosor;
                     offsetY = grosor / 2;
-
                     //Es recomendable liberar recursos de dibujo pues se
                     //pueden realizar muchos y cogen memoria
                     lapiz.Dispose();
                     break;
+
+                case eMarca.ImagenDeForma:
+                    grosor = 5;
+                    g.DrawImage(ImagenMarca, 0, 0, 100, 100);
+                    offsetX = 20;
+                    offsetY = 20;
+                    
+                    break;
             }
             //Finalmente pintamos el Texto; desplazado si fuera necesario
-            SolidBrush b = new SolidBrush(this.ForeColor);
+            SolidBrush b = new SolidBrush(Color.Black);
             g.DrawString(this.Text, this.Font, b, offsetX + grosor, offsetY);
             Size tam = g.MeasureString(this.Text, this.Font).ToSize();
             this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
