@@ -53,7 +53,7 @@ namespace ProyectoEtiquetaAviso
             set
             {
                 colorInicioGradiente = value;
-                // Refresh();
+                //Refresh();
             }
             get
             {
@@ -124,7 +124,8 @@ namespace ProyectoEtiquetaAviso
 
                 Pen pen = new Pen(gradientBrush, this.Width);
 
-                e.Graphics.DrawLine(pen, 0, 0, this.Location.X, 0);
+                //e.Graphics.DrawLine(pen, 0, 0, this.Location.X, 0);
+                e.Graphics.DrawLine(pen, 0, 0, this.Width, this.Height);
                 dibujarMarcaYTexto(e);
             }
         }
