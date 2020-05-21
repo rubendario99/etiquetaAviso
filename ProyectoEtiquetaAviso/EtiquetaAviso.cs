@@ -168,10 +168,17 @@ namespace ProyectoEtiquetaAviso
 
                 case eMarca.ImagenDeForma:
 
-                    grosor = 5;
-                    g.DrawImage(ImagenMarca, grosor, grosor, this.Font.Height, this.Font.Height);
-                    offsetX = grosor + this.Font.Height;
-                    offsetY = grosor;
+                    try
+                    {
+                        grosor = 5;
+                        g.DrawImage(ImagenMarca, grosor, grosor, this.Font.Height, this.Font.Height);
+                        offsetX = grosor + this.Font.Height;
+                        offsetY = grosor;
+                    }
+                    catch (System.ArgumentNullException)
+                    {
+
+                    }
 
                     //grosor = 20;
                     //g.DrawImage(ImagenMarca, 0, 0, 100, 100);
