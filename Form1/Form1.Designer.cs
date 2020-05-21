@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.etiquetaAviso1 = new ProyectoEtiquetaAviso.EtiquetaAviso();
             this.SuspendLayout();
@@ -50,11 +51,11 @@
             this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.Crimson;
             this.etiquetaAviso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaAviso1.Gradiente = true;
-            this.etiquetaAviso1.ImagenMarca = null;
+            this.etiquetaAviso1.ImagenMarca = ((System.Drawing.Bitmap)(resources.GetObject("etiquetaAviso1.ImagenMarca")));
             this.etiquetaAviso1.Location = new System.Drawing.Point(288, 120);
-            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.Circulo;
+            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.ImagenDeForma;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(462, 86);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(432, 56);
             this.etiquetaAviso1.TabIndex = 0;
             this.etiquetaAviso1.Text = "safasdasdasdweqeffd";
             this.etiquetaAviso1.UseWaitCursor = true;

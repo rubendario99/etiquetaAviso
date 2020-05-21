@@ -30,6 +30,8 @@ namespace ProyectoEtiquetaAviso
             InitializeComponent();
         }
 
+        public int tamaño;
+
         private Bitmap imagenMarca;
         [Category("Appareance")]
         [Description("Imagen que se pondra en marca")]
@@ -38,6 +40,7 @@ namespace ProyectoEtiquetaAviso
             set
             {
                 imagenMarca = value;
+                this.Refresh();
             }
             get
             {
@@ -192,6 +195,15 @@ namespace ProyectoEtiquetaAviso
             Size tam = g.MeasureString(this.Text, this.Font).ToSize();
             this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
             b.Dispose();
+            tamaño = offsetX + offsetY;
+        }
+        public event System.EventHandler ClickEnMarca;
+
+        private void EtiquetaAviso_MouseClick(object sender, MouseEventArgs e) {
+            if (e.X<tamaño)
+            {
+                MessageBox.Show("pulsada marca");
+            }
         }
     }
 }

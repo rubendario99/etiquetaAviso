@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // EtiquetaAviso
+            // 
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EtiquetaAviso_MouseClick);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
