@@ -54,7 +54,7 @@
             this.etiquetaAviso1.Location = new System.Drawing.Point(288, 120);
             this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.ImagenDeForma;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(53, 56);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(58, 56);
             this.etiquetaAviso1.TabIndex = 0;
             this.etiquetaAviso1.Text = "texto";
             this.etiquetaAviso1.UseWaitCursor = true;
