@@ -53,7 +53,7 @@ namespace ProyectoEtiquetaAviso
             set
             {
                 colorInicioGradiente = value;
-                //Refresh();
+                this.Refresh();
             }
             get
             {
@@ -69,7 +69,7 @@ namespace ProyectoEtiquetaAviso
             set
             {
                 colorFinalGradiente = value;
-                // Refresh();
+                this.Refresh();              
             }
             get
             {
@@ -192,12 +192,6 @@ namespace ProyectoEtiquetaAviso
             Size tam = g.MeasureString(this.Text, this.Font).ToSize();
             this.Size = new Size(tam.Width + offsetX + grosor, tam.Height + offsetY * 2);
             b.Dispose();
-        }
-
-        protected override void OnTextChanged(EventArgs e)
-        {
-            base.OnTextChanged(e);
-            this.Refresh();
         }
     }
 }

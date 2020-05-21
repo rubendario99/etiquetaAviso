@@ -46,17 +46,17 @@
             // etiquetaAviso1
             // 
             this.etiquetaAviso1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.etiquetaAviso1.ColorFinalGradiente = System.Drawing.Color.Goldenrod;
-            this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.etiquetaAviso1.ColorFinalGradiente = System.Drawing.Color.DarkOrchid;
+            this.etiquetaAviso1.ColorInicioGradiente = System.Drawing.Color.Crimson;
             this.etiquetaAviso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.etiquetaAviso1.Gradiente = true;
             this.etiquetaAviso1.ImagenMarca = null;
             this.etiquetaAviso1.Location = new System.Drawing.Point(288, 120);
-            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.ImagenDeForma;
+            this.etiquetaAviso1.Marca = ProyectoEtiquetaAviso.eMarca.Circulo;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(343, 46);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(462, 86);
             this.etiquetaAviso1.TabIndex = 0;
-            this.etiquetaAviso1.Text = "safasdasdasdweqe";
+            this.etiquetaAviso1.Text = "safasdasdasdweqeffd";
             this.etiquetaAviso1.UseWaitCursor = true;
             // 
             // Form1
