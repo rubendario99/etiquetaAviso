@@ -171,16 +171,16 @@ namespace ProyectoEtiquetaAviso
 
                 case eMarca.ImagenDeForma:
 
-                    try
+                    if (ImagenMarca == null)
+                    {
+                        break;
+                    }
+                    else
                     {
                         grosor = 5;
                         g.DrawImage(ImagenMarca, grosor, grosor, this.Font.Height, this.Font.Height);
                         offsetX = grosor + this.Font.Height;
                         offsetY = grosor;
-                    }
-                    catch (System.ArgumentNullException)
-                    {
-
                     }
 
                     //grosor = 20;
@@ -202,7 +202,7 @@ namespace ProyectoEtiquetaAviso
         private void EtiquetaAviso_MouseClick(object sender, MouseEventArgs e) {
             if (e.X<tamaño)
             {
-                MessageBox.Show("pulsada marca");
+                ClickEnMarca?.Invoke(this, e);
             }
         }
     }

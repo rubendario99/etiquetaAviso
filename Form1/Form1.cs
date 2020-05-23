@@ -43,5 +43,10 @@ namespace Form1
             etiquetaAviso1.Gradiente = !etiquetaAviso1.Gradiente;
             //this.Text =""+etiquetaAviso1.ColorFinalGradiente;
         }
+
+        private void etiquetaAviso1_ClickEnMarca(object sender, EventArgs e)
+        {
+            MessageBox.Show("evento clickenmarca");
+        }
     }
 }
